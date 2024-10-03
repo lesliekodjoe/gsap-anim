@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="py-14 text-black bg-gradient-to-r from-[#C9729A] to-[#923ADB] fixed bottom-0 w-full">
+    <footer className="py-14 text-black bg-gradient-to-r from-[#C9729A] to-[#923ADB] w-full fixed bottom-0">
       <div className="px-44 flex items-center justify-between">
         <div className="flex items-center ">
           <svg
