@@ -17,24 +17,3 @@ export const fadeIn = (target: GsapTarget) => {
   });
 };
 
-// export const createTimeline = (targets: GsapTarget[]) => {
-//   const tl = gsap.timeline({
-//     defaults: { ease: "power4.inOut"},
-//   });
-
-//   //   first parameter is selector, second=cssStyle
-//   // Adding the .to() after the first t1.to allows me to chain the animation
-//   targets.forEach((target) => {
-//     tl.to(target, {
-//       clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-//       opacity: 1,
-//       y: 0,
-//       duration: 2,
-//     }).to(target, {
-//       clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-//       opacity: 1,
-//       y: 0,
-//     }, "-=1");
-//   });
-// };
-
