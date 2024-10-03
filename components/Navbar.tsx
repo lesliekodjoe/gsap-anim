@@ -13,10 +13,16 @@ const Navbar = () => {
           ></img>
         </div>
       </Link>
-      <div className="hidden lg:block">
-        <Link to="/">Home</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/Footer">Footer</Link>
+      <div className="hidden lg:flex gap-x-5">
+        <Link to="/" className="hover:underline">
+          Home
+        </Link>
+        <Link to="/Contact" className="hover:underline">
+          Contact
+        </Link>
+        <Link to="/Footer" className="hover:underline">
+          Footer
+        </Link>
       </div>
     </nav>
   );
