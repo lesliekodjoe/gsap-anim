@@ -1,96 +1,54 @@
-@media only screen and (min-width: 1200px) {
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    margin: 8em 0 6em;
-
-    h1 {
-      width: 40%;
-      margin-bottom: 0;
-      text-align: left;
-    }
-
-    .form {
-      width: 50%;
-      align-self: flex-end;
-      padding-bottom: 1em;
-      margin: unset;
-    }
-  }
-  .features {
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto;
-  }
-  .wrapper,
-  .features {
-    margin-bottom: 0;
-  }
-
-  .features .card {
-    margin-bottom: 0;
-    height: 15rem;
-  }
-  .wrapper {
-    width: 1150px;
-    margin: 3em auto 0;
-  }
+h1 { 
+    font-size: 14rem; 
+    font-family: 'Bebas Neue';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    color: white;
 }
-
-@media only screen and (min-width: 750px) {
-  .features {
+section {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 2em;
-
-    .card {
-      margin-bottom: 2em;
-      height: auto;
-
-      .title {
-        margin-top: 0;
-      }
-    }
-  }
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    margin: 0 auto;
+}
+.gallery {
+    height: 200vh;
 }
 
-.card {
-  transform: translateY(100px) scaleY(1);
-  transform-origin: 0% 100%;
-  padding-left: 1em;
-  border-left: 1px solid #4e5862;
-  position: relative;
-  height: 8em;
+.img {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
 
-  &:before {
-    position: absolute;
-    content: "";
-    border-radius: 100%;
-    border: 0.5em solid #1a1d20;
-    background: #ba62ad;
-    width: 0.5em;
-    height: 0.5em;
-    top: 0;
-    left: -0.8em;
-    opacity: 1;
-  }
+    &:nth-of-type(1) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(2) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(3) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(4) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(5) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(6) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(7) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(8) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
+    &:nth-of-type(9) {background-image: url('https://assets.codepen.io/2621168/img1.jpg');}
 
-  &:hover:before {
-    width: 0.8em;
-    height: 0.8em;
-    left: -0.95em;
-    top: -0.15em;
-  }
 
-  .title {
-    font-weight: bold;
-    opacity: 0;
-    transform: translateY(100px);
-  }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+    }
+}
 
-  .desc {
-    color: #697887;
-    opacity: 0;
-    transform: translateY(100px);
-  }
+.line {
+    border-right: 1px solid black;
 }

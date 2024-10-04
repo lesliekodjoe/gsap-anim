@@ -3,8 +3,27 @@ import React from "react";
 const Home = () => {
   return (
     <section className="px-10 py-20">
-      <div className=" font-black text-3xl">Home</div>
-      <div>Go to Contact to see Animation :)</div>
+      <h1>so sick</h1>
+
+      <section>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </section>
+
+      <section>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+        <div className="img"></div>
+      </section>
+
+      <section></section>
     </section>
   );
 };
