@@ -12,4 +12,14 @@ body {
   opacity: 0;
   transform: translateY(100px);
 }
+/* 
+body:hover .container{
+  clip-path: polygon(7% 7%, 93% 7%, 93% 93%, 7% 93%);
+} */
 
+.container{
+  background: url("./assets/proIMG1.jpg");
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.5s;
+}

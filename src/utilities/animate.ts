@@ -17,3 +17,14 @@ export const fadeIn = (target: GsapTarget) => {
   });
 };
 
+export const imgFadeIn = (target: GsapTarget) => {
+  const tl = gsap.timeline({
+    defaults: { ease: "power4.inOut", duration: .05 },
+  });
+
+  //   first parameter is selector, second=cssStyle
+  // Adding the .to() after the first t1.to allows me to chain the animation
+  tl.to(target, {
+    clipPath: "polygon(7% 7%, 93% 7%, 93% 93%, 7% 93%)",
+  });
+};

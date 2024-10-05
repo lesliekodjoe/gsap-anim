@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { fadeIn } from "../utilities/animate";
-import "../styles/main.css";
 
 const Contact = () => {
   const h1Ref = useRef(null);

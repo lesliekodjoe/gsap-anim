@@ -1,29 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { imgFadeIn } from "../utilities/animate";
 
 const Home = () => {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const target = imgRef.current;
+
+    imgFadeIn(target);
+  }, []);
+
+
   return (
     <section className="px-10 py-20">
-      <h1>so sick</h1>
-
-      <section>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </section>
-
-      <section>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-      </section>
-
-      <section></section>
+      <h1 id="my-text">woah.text</h1>
+      <div ref={imgRef} className="container"></div>
     </section>
   );
 };
