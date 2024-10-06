@@ -21,10 +21,10 @@ export const fadeIn = (target: GsapTarget) => {
 
 export const imgFadeIn = (target: GsapTarget) => {
   const tl = gsap.timeline({
-    defaults: { ease: "power4.inOut", duration: 0.05 },
+    defaults: { ease: "power2.inOut", duration: 0.5 },
     scrollTrigger: {
-      trigger: ".container",
-      scrub: true,
+      trigger: target,
+      scrub: 1,
     },
   });
 

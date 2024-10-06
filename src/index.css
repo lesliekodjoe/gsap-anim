@@ -5,6 +5,8 @@
 body {
   background: #1a1d20;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-h1 {
@@ -17,11 +19,13 @@ body:hover .container{
   clip-path: polygon(7% 7%, 93% 7%, 93% 93%, 7% 93%);
 } */
 
-.container{
+.container {
   background: url("./assets/proIMG1.jpg");
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  transition: clip-path 0.5s;
+  
+  width: 100%;
 }
-
-
