@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import proIMG1 from "../assets/proIMG1.jpg";
 
 const About = () => {
   return (
@@ -10,18 +11,18 @@ const About = () => {
       </section>
 
       <section>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
-        <div className="img"></div>
+        <div className="img w-44 h-44">
+          <img src={proIMG1} alt="Image description" className="w-full h-full" />
+        </div>
+        <div className="img w-44">
+          <img src={proIMG1} alt="Image description" className="w-full h-full" />
+        </div>
+        <div className="img w-44">
+          <img src={proIMG1} alt="Image description" className="w-full h-full" />
+        </div>
       </section>
     </section>
   );
-}
+};
 
-export default About
+export default About;
