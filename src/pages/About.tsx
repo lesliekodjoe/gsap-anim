@@ -1,27 +1,26 @@
 import React from "react";
-import proIMG1 from "../assets/proIMG1.jpg";
 
 const About = () => {
+  const images = [
+    "../assets/proIMG1.jpg",
+    "../assets/proIMG2.jpg",
+    "../assets/proIMG3.jpg",
+    "../assets/proIMG4.jpg",
+  ];
   return (
-    <section className="px-10 py-10">
-      <section>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </section>
-
-      <section>
-        <div className="img w-44 h-44">
-          <img src={proIMG1} alt="Image description" className="w-full h-full" />
-        </div>
-        <div className="img w-44">
-          <img src={proIMG1} alt="Image description" className="w-full h-full" />
-        </div>
-        <div className="img w-44">
-          <img src={proIMG1} alt="Image description" className="w-full h-full" />
-        </div>
-      </section>
-    </section>
+    <div className="px-10 ">
+      <div className="grid grid-cols-3 gap-4">
+        {images.map((image, index) => (
+          <div key={index} className="w-44">
+            <img
+              src={image}
+              alt={`Image ${index + 1}`}
+              className="w-full h-full"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

@@ -13,7 +13,6 @@ const Home = () => {
 
   return (
     <section className="px-10 py-20">
-      <h1 id="my-text">woah.text</h1>
       <div ref={imgRef} className="container"></div>
     </section>
   );

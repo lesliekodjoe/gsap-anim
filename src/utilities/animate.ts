@@ -1,4 +1,6 @@
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type GsapTarget = gsap.TweenTarget;
 
@@ -19,7 +21,11 @@ export const fadeIn = (target: GsapTarget) => {
 
 export const imgFadeIn = (target: GsapTarget) => {
   const tl = gsap.timeline({
-    defaults: { ease: "power4.inOut", duration: .05 },
+    defaults: { ease: "power4.inOut", duration: 0.05 },
+    scrollTrigger: {
+      trigger: ".container",
+      scrub: true,
+    },
   });
 
   //   first parameter is selector, second=cssStyle

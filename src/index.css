@@ -24,10 +24,4 @@ body:hover .container{
   transition: clip-path 0.5s;
 }
 
-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 100vh;
-    margin: 0 auto;
-}
 
